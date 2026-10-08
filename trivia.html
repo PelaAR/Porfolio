@@ -90,6 +90,32 @@
             <p>Al final de la partida siempre abrá un mensaje motivacional, incluso si el usuario respondió mal todas
                 las preguntas.</p>
 
+            
+
+
+                 <figure> <img class="img-proyecto" src="img/captura_4_trivia_completada.png" alt="Mensaje tipo " feedback"
+                    luego de jugar.">
+                <figcaption style="text-align: center;">Mensaje tipo "feedback" luego de jugar.</figcaption>
+            </figure>
+
+            <p>En la base del menú, se podrá observar que hay tres opciones:</p>
+            <p>
+            <ul>
+                <li>Verde</li>
+                <li>Amarillo</li>
+                <li>Verde</li>
+            </ul></p>
+
+            <p>Acá se elige el color que detectará la cámara. Esto se implementó para evitar que el juego se "equivoque" con el puntero. Por ejemplo, si está seleccionado el color verde, y la cámara detecta muchos objetos color verde (la ropa, por ejemplo), el puntero se "vuelve loco", y se vuelve imposible controlarlo. Para solucionarlo, se cambia a otro color, por ejemplo amarillo.</p>
+
+ <figure> <img class="img-proyecto" src="img/trivia.png" alt="Mensaje tipo " feedback"
+                    luego de jugar.">
+                <figcaption style="text-align: center;">Mensaje tipo "feedback" luego de jugar.</figcaption>
+            </figure>
+
+            <p>En la parte inferior izquierda, se puede observar la cámara binaria, donde cada punto blanco es el color seleccionado detectado. Esto ayuda a identificar muy bien si tenemos ruido de otros objetos del mismo color que interfieren con la cámara.</p>
+
+            <p>La idea principal era mover el cursor con la mano, utilizando la librería para Phyton MediaPipe proporcionada por Google. La misma utiliza Inteligencia Artificial y facilita mucho la tarea. Se utiliza principalmente para detectar rostros, pero también se puede configurar para que detecte objetos. En esta occasion, no se puedo lograr su funcionamiento por limitaciones de Hardware, por lo tanto se optó por otra la alternativa que detecta colores.</p>
 
 
         </section>
