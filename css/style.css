@@ -1,0 +1,218 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Navegación */
+nav {
+    background-color: #34495e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+    /* Un tono verde agua al pasar el mouse */
+}
+
+/* Contenido Principal */
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Estilos para el botón interactivo */
+.btn-tema {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-tema:hover {
+    background-color: #16a085;
+}
+
+/* Colores alternativos para el Modo Oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #000000;
+}
+
+body.dark-mode nav {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode main {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode p {
+    color: #e0e0e0;
+}
+
+/* Ajuste sutil para que los títulos destaquen en modo oscuro */
+body.dark-mode h2 {
+    color: #1abc9c;
+}
+
+/* Estilos para las tarjetas de recursos */
+.tarjeta-recurso {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode .tarjeta-recurso {
+    background-color: #2a2a2a;
+    border-color: #444;
+}
+
+.tarjeta-recurso h3 {
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+body.dark-mode .tarjeta-recurso h3 {
+    color: #3498db;
+}
+
+
+/* Estilos para las imágenes */
+.img-recurso {
+    display: block;
+    /* La palabra "auto" a los costados es lo que centra la imagen perfectamente */
+    margin: 0 auto 15px auto;
+
+    width: 100%;
+    max-width: 300px;
+    /* Al fijar esto en píxeles, la imagen nunca será gigante */
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Estilos para las imágenes DENTRO de los proyectos (más grandes) */
+.img-proyecto {
+    display: block;
+    margin: 30px auto;
+    /* Mayor margen para que respiren */
+    width: 75%;
+    max-width: 800px;
+    /* Tamaño máximo mucho mayor para que sean legibles */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Una sombrita para que resalten */
+}
+
+/* Botones de enlaces */
+.enlace-btn {
+    display: inline-block;
+    background-color: #2980b9;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.enlace-btn:hover {
+    background-color: #3498db;
+}
+
+.contenedor {
+    display: flex;
+    /* Coloca los elementos hijos uno al lado del otro */
+    align-items: center;
+    /* Centra el texto verticalmente con respecto a la imagen */
+    gap: 15px;
+    /* Espacio de separación entre la imagen y el texto */
+}
+
+.mi-imagen {
+    width: 150px;
+    /* Ajusta el ancho de la imagen según necesites */
+    height: auto;
+}
+
+.hola {
+    text-align: center;
+}

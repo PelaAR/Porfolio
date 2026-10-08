@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Recursos - Portafolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mi Portafolio Docente</h1>
+        <p>Recursos de Computación, Tecnología e Informática</p>
+        <button id="btn-tema" class="btn-tema">🌙 Modo Oscuro</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recursos.html">Lista de proyectos</a></li>
+            <!--<li><a href="guia.html">Guía Docente</a></li> -->
+            <!--<li><a href="acerca.html">Sobre Mí</a></li>-->
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="hola">Proyectos</h2>
+
+
+        <!-- Galería de proyectos -->
+        <div class="galeria-recursos">
+            <!-- Tarjeta Otto -->
+            <section class="tarjeta-recurso">
+                <h3>Video: Las Malvinas son Argentinas</h3>
+                <img src="img/portada_malvinas.png" alt="Robot Otto" class="img-recurso">
+                <p>Video elaborado con el uso de herramientas de Inteligencia Artificial Generativa y edición de video.
+                </p>
+                <a href="malvinas.html" class="enlace-btn">Ver detalles del proyecto</a>
+            </section>
+
+            <!-- Tarjeta Trivia -->
+            <section class="tarjeta-recurso">
+                <h3>Videojuego: Trivia de Trivia por Gestos</h3>
+                <img src="img/trivia.png" alt="Trivia" class="img-recurso">
+                <p>Juego interactivo de preguntas y respuestas, controlado mediante el uso de una cámara web.</p>
+                <a href="trivia.html" class="enlace-btn">Ver detalles del proyecto</a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Portafolio de Recursos Educativos</p>
+    </footer>
+
+    <script>
+        const btnTema = document.getElementById('btn-tema');
+        const body = document.body;
+
+        btnTema.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                btnTema.textContent = '☀️ Modo Claro';
+            } else {
+                btnTema.textContent = '🌙 Modo Oscuro';
+            }
+        });
+    </script>
+</body>
+
+</html>

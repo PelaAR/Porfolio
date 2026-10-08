@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Otto - Portafolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mi Portafolio Docente</h1>
+        <p>Recursos de Computación, Tecnología e Informática</p>
+        <button id="btn-tema" class="btn-tema">🌙 Modo Oscuro</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recursos.html">Lista de proyectos</a></li>
+            <!--<li><a href="guia.html">Guía Docente</a></li> -->
+            <!--<li><a href="acerca.html">Sobre Mí</a></li>-->
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Botón para volver atrás -->
+        <a href="recursos.html" class="enlace-btn" style="margin-bottom: 20px; background-color: #7f8c8d;">← Volver a la
+            biblioteca</a>
+
+        <h2>Video: Las Malinas son Argentinas</h2>
+
+        <section>
+            <h3>Introducción</h3>
+            <p>La propuesta principal consistión en la elaboración de un video relacionado
+                La idea consistió en utilizar herramientas de Inteligencia Artificial generativa, sumado a la
+                investigación en repositorios históricos, para elaborar un video sobre la temática de Malvinas. El mismo
+                debía ser informativo y mantener un componente emotivo. Se aprovechó la situación ocurrida en el
+                mundial, en el partido contra Inglaterra, para tomar como punto de partida. Todas las herramientas
+                utilizadas, así como las fuentes consultadas, se encuentran en los créditos del video.
+            </p>
+        </section>
+
+        <section>
+            <h3>Resultado final</h3>
+            <div style="text-align: center; margin: 20px 0;">
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=FuB39KWJhpg"
+                    title="Video Las Malvinas son Argentinas" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <h3>Conclusión</h3>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Portafolio de Recursos Educativos</p>
+    </footer>
+
+    <script>
+        const btnTema = document.getElementById('btn-tema');
+        const body = document.body;
+
+        btnTema.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                btnTema.textContent = '☀️ Modo Claro';
+            } else {
+                btnTema.textContent = '🌙 Modo Oscuro';
+            }
+        });
+    </script>
+</body>
+
+</html>

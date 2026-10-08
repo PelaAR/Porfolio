@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Malvinas Argentinas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mi Portafolio Docente</h1>
+        <p>Recursos de Computación, Tecnología e Informática</p>
+        <button id="btn-tema" class="btn-tema">🌙 Modo Oscuro</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recursos.html">Lista de proyectos</a></li>
+            <!--<li><a href="guia.html">Guía Docente</a></li> -->
+            <!--<li><a href="acerca.html">Sobre Mí</a></li>-->
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Botón para volver atrás -->
+        <a href="recursos.html" class="enlace-btn" style="margin-bottom: 20px; background-color: #7f8c8d;">← Volver a la
+            biblioteca</a>
+
+        <h2>Juego Trivia con cámara</h2>
+
+        <section>
+            <h3>Descripción General</h3>
+            <p>La propuesta, desde la materia Informática Educativa 2, era realizar un recurso para las Jornadas de
+                Puertas de la Facultad de Ciencias Exactas y Naturales. Las posbiles actividades fueron las siguientes:
+            </p>
+            <p>
+
+            <ul>
+                <li>Creación de juego interactivo con Python. </li>
+                <li>Actividad con Robótica Educativa.</li>
+                <li>Demostraciones de Realidad Aumentada.</li>
+                <li>Animaciones generadas con IA: Personas/Sucesos relevantes de la Computación/Matemática combinados
+                    con obras de arte/música populares.</li>
+            </ul>
+            </p>
+            <p>Para esta ocación, se optó por la primera, la realización de un juego interactivo con Python, con un
+                agregado de realidad aumentada.</p>
+
+        </section>
+
+        <section>
+            <h3>La propuesta</h3>
+            <p>La propuesta consistió en un juego tipo trivia sobre preguntas de computación en general. El puntero se
+                moverá con la cámara, la cuál está programada para que detecte colores. El usuario moverá el puntero con
+                un objeto del colór que esté seleccionado. Cuando se "tapa" el color, se detecta como un click (esto se
+                ve reflejado en el puntero cuando toma el color rojo). De esta manera, el usuario posiciona el puntero
+                sobre la respuesta que cree correcta y luego "tapa" el color para seleccionarla.</p>
+
+
+
+            <figure> <img class="img-proyecto" src="img/captura_1_menu.png" alt="Menú principal de la Trivia.">
+                <figcaption style="text-align: center;">Menú principal de la Trivia.</figcaption>
+            </figure>
+
+            <p>La trivia consiste en cinco preguntas sencillas sobre la computación en geneneral (hay una base de 10
+                preguntas, las cuales se escogen aleatoriamente). Al hacer clic en "Nuevo juego", aparece la primer
+                pregunta, seguido de una cuenta atrás de tres segundos antes de que aparezcan las respuestas a elegir.
+                Esto es para "obligar" al usuario a que lea la pregunta y no se precipite a escoger la repuesta
+                inmediatamente.
+            </p>
+
+            <figure> <img class="img-proyecto" src="img/captura_2_pregunta.png"
+                    alt="Una de las preguntas de la Trivia durante el juego">
+                <figcaption style="text-align: center;">Una de las preguntas de la Trivia durante el juego.</figcaption>
+            </figure>
+
+            <p>Si la respuesta es correcta, se tornara en color verde y aparecerá en pantalla el mensaje "¡Muy bien!
+                Respuesta correcta", caso contrario la respuesta se tornará color rojo y aparecerá el mensaje "¡Ups!
+                Respuesta incorrecta".</p>
+
+            <figure> <img class="img-proyecto" src="img/captura_3_respuesta_correcta.png" alt="Mensaje tipo " feedback"
+                    luego de jugar.">
+                <figcaption style="text-align: center;">Mensaje tipo "feedback" luego de jugar.</figcaption>
+            </figure>
+
+            <p>Al final de la partida siempre abrá un mensaje motivacional, incluso si el usuario respondió mal todas
+                las preguntas.</p>
+
+
+
+        </section>
+
+
+
+
+        <section>
+            <h3></h3>
+        </section>
+
+        <section>
+            <h3>Conclusión</h3>
+            <p>Para mi sorpresa, la trivia superó las expectativas. Tanto alumnos como profesores pudieron realizarla
+                prácticamente sin inconvenientes, más allá de algún que otro probema menor con el color seleccionado,
+                pero se solucionaba al instante cambiando de color. Noté que las preguntas eran demasiado sencillas, ya
+                que casi siempre los alumnos que jugaban las acertaban todas. Una posible mejora podría ser la
+                incorporación de distitnos "niveles" de dificutad, y así adaptar las preguntas, según el público
+                presente.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Portafolio de Recursos Educativos</p>
+    </footer>
+
+    <script>
+        const btnTema = document.getElementById('btn-tema');
+        const body = document.body;
+
+        btnTema.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                btnTema.textContent = '☀️ Modo Claro';
+            } else {
+                btnTema.textContent = '🌙 Modo Oscuro';
+            }
+        });
+    </script>
+</body>
+
+</html>

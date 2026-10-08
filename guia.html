@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Educativos - Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio Docente</h1>
+        <p>Recursos de Computación, Tecnología e Informática</p>
+        <!-- Este es el botón interactivo -->
+        <button id="btn-tema" class="btn-tema">🌙 Modo Oscuro</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recursos.html">Catálogo de Recursos</a></li>
+            <li><a href="guia.html">Guía Docente</a></li>
+            <li><a href="acerca.html">Sobre Mí</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>¡Bienvenidos a mi espacio educativo!</h2>
+            <p>En este sitio encontrarás proyectos didácticos como el <strong>Robot Otto</strong> y el <strong>Juego de Trivia</strong>, diseñados para llevar la tecnología al aula de forma práctica y divertida.</p>
+            
+            <p>Navegá por el menú superior para descubrir los materiales, descargar los códigos y leer las guías de implementación curricular.</p>
+            
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Portafolio de Recursos Educativos</p>
+    </footer>
+    <!-- Código JavaScript para la interactividad -->
+    <script>
+        const btnTema = document.getElementById('btn-tema');
+        const body = document.body;
+
+        btnTema.addEventListener('click', () => {
+            // Esto alterna la clase 'dark-mode' en el cuerpo de la página
+            body.classList.toggle('dark-mode');
+            
+            // Esto cambia el texto e ícono del botón dependiendo del modo
+            if (body.classList.contains('dark-mode')) {
+                btnTema.textContent = '☀️ Modo Claro';
+            } else {
+                btnTema.textContent = '🌙 Modo Oscuro';
+            }
+        });
+    </script>
+</body>
+</html>

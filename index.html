@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Educativos - Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mi Portafolio Docente</h1>
+        <p>Recursos de Computación, Tecnología e Informática</p>
+        <!-- Este es el botón interactivo -->
+        <button id="btn-tema" class="btn-tema">🌙 Modo Oscuro (Experimental)</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recursos.html">Lista de proyectos</a></li>
+            <!--<li><a href="guia.html">Guía Docente</a></li> -->
+            <!--<li><a href="acerca.html">Sobre Mí</a></li>-->
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2 class="hola">¡Hola!</h2>
+            <div class=" contenedor">
+                <img src="img/myAvatar.png" alt="Imagen avatar" class="mi-imagen">
+                <div>
+                    <p>Mi nombre es Julián Sanchez, soy estudiante del Profesorado en Computación en la Facultad de
+                        Ciencias Exactas y Naturales de la Universidad Nacional de La Pampa.</p>
+                    <p>Este sítio está pensado para compartir los trabajos y proyectos que haremos en la carrera. De
+                        momento
+                        son
+                        pocos... ¡pero pronto se añadirán más!.</p>
+
+                    <p>Para comenzar, podés hacer click en el "Catálogo de Recursos" para acceder a los mismos.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Portafolio de Recursos Educativos</p>
+    </footer>
+    <!-- Código JavaScript para la interactividad -->
+    <script>
+        const btnTema = document.getElementById('btn-tema');
+        const body = document.body;
+
+        btnTema.addEventListener('click', () => {
+            // Esto alterna la clase 'dark-mode' en el cuerpo de la página
+            body.classList.toggle('dark-mode');
+
+            // Esto cambia el texto e ícono del botón dependiendo del modo
+            if (body.classList.contains('dark-mode')) {
+                btnTema.textContent = '☀️ Modo Claro (Experimental)';
+            } else {
+                btnTema.textContent = '🌙 Modo Oscuro (Experimental)';
+            }
+        });
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>
